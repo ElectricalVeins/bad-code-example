@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    .side-menu {
+        position: absolute;
+        z-index: 20;
+        min-width: 320px;
+        max-width: 480px;
+        width: 100%;
+        left: -480px;
+        top:0;
+        bottom: 0;
+        transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+        background-color: black;
+        color: white;
+        padding: 20px 40px;
+    }
+
+    .open {
+        left: 0;
+    }
+
+    body{
+        min-height: 100vh;
+    }
+
+</style>
+
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <div class="side-menu">
+        <button id="close-menu-button">Close menu</button>
+        <ul>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Voluptatibus, sequi dolorem!</li>
+            <li>Eius, possimus reiciendis!</li>
+            <li>Velit, cumque. Laudantium.</li>
+            <li>Vero, maiores molestiae!</li>
+        </ul>
+    </div>
+    <div>
+        <button id="open-menu-button">Open side menu</button>
+        <div>
+            <h1>Important content</h1>
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Quam nemo alias atque molestias fuga maiores autem rerum veniam commodi! Odit provident ad ducimus,
+                laboriosam magni cum, autem vel, 
+                reiciendis doloribus maxime illo error ipsam. Fugiat, 
+                quas qui. Laudantium quas veniam praesentium iste explicabo!
+                Optio odit debitis perspiciatis ullam reprehenderit voluptas.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
